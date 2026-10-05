@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IoT Monitoring Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>IoT Monitoring Dashboard</h1>
+            <p>Real-time sensor monitoring system</p>
+        </header>
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h2>Temperature</h2>
+                <div class="value">
+                    <span id="temperature">--</span> °C
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Humidity</h2>
+                <div class="value">
+                    <span id="humidity">--</span> %
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Motor</h2>
+                <div class="value">
+                    <span id="motor">--</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="buttons">
+
+            <button id="refreshButton">
+                Refresh Data
+            </button>
+
+            <button id="simulateButton">
+                Simulate Sensor Reading
+            </button>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Last Update</h2>
+
+            <p>
+                <span id="timestamp">--</span>
+            </p>
+
+        </section>
+
+        <section class="card">
+
+        <h2>Sensor Trends</h2>
+
+        <canvas id="sensorChart"></canvas>
+        </section> 
+
+        <section>
+    
+
+            <h2>Sensor History</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Temperature</th>
+                        <th>Humidity</th>
+                        <th>Motor</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+
+                <tbody id="historyTable">
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
