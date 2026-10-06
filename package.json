@@ -1,16 +1,20 @@
 {
   "name": "iot-javascript-dashboard",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "Full-stack IoT monitoring dashboard built with JavaScript, Node.js, Express, and MongoDB",
+  "main": "backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "javascript",
+    "iot",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Valentina Osorio Reyes",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
